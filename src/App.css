@@ -1,0 +1,17 @@
+.formStyle {
+  margin-top: 30px;
+  border: #c8a2c8 3px solid;
+  border-radius: 10px;
+  padding: 50px;
+  color: #c8a2c8;
+  width:100%;
+  margin:0;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #c8a2c8;
+}

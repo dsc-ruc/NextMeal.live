@@ -1,0 +1,12 @@
+.page {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  transition: 0.25s;
+}
+
+.formStyle {
+  min-width: 80%;
+  width: 100%;
+}

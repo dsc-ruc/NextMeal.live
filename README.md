@@ -1,6 +1,5 @@
 # Solutions Challenge 2020 Project
-## Rutgers University Camden
-## Nextmeal.live
+## Rutgers University Camden\n Nextmeal.live
 
 ## What is NextMeal.live
     NextMeal.live is a project aimed to end food insecurity by using the problem of resturant food

@@ -12,9 +12,11 @@
 
 ## Getting started
 ### If you would like to help on this project
-    First clone repo with ```bash
-    git clone https://github.com/dsc-ruc/NextMeal.live.git```
+    First clone repo with 
+        ```bash
+        git clone https://github.com/dsc-ruc/NextMeal.live.git
+        ```
 
-    Next inside of the project directory run ```npm install``` to get all of the requried packages
+    Next inside of the project directory run ```bash npm install``` to get all of the requried packages
 
 

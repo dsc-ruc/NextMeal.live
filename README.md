@@ -26,4 +26,38 @@ git clone https://github.com/dsc-ruc/NextMeal.live.git
     
 Next inside of the project directory run ```npm install``` to get all of the requried packages
 
+## Backend Setup
+Inside backend folder, if you use virtual environments:
+```bash
+python3 -m virtual env
+soucre env/bin/activate
+pip install -r requirements.txt
+```
 
+otherwise just use:
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+To run the server use:
+```bash
+python3 manage.py runserver
+```
+
+The default port django uses is 8000.
+
+## Data Template
+```json
+{
+	"restaurant_name": "name",
+	"address": "street name",
+	"food_available": "food",
+	"potential_allergies": "allergy",
+	"location": {
+		"0": 0.0,
+		"1": 0.0
+	},
+	"food_available_start_time": "time as a string",
+	"food_available_end_time": "time as a string"
+}
+```

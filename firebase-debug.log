@@ -1,0 +1,38 @@
+[debug] [2020-03-07T18:28:53.881Z] ----------------------------------------------------------------------
+[debug] [2020-03-07T18:28:53.885Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\TAYK\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-03-07T18:28:53.885Z] CLI Version:   7.14.0
+[debug] [2020-03-07T18:28:53.885Z] Platform:      win32
+[debug] [2020-03-07T18:28:53.885Z] Node Version:  v12.16.1
+[debug] [2020-03-07T18:28:53.887Z] Time:          Sat Mar 07 2020 13:28:53 GMT-0500 (Eastern Standard Time)
+[debug] [2020-03-07T18:28:53.887Z] ----------------------------------------------------------------------
+[debug] [2020-03-07T18:28:53.887Z] 
+[debug] [2020-03-07T18:28:53.903Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-07T18:28:53.904Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\TAYK\Documents\GitHub\dsc-ruc\NextMeal.live
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-03-07T18:28:59.219Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-03-07T18:28:59.500Z] <<< HTTP RESPONSE 200
+[info] i  Using project nextmeal-c8d33 (NextMeal)
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 

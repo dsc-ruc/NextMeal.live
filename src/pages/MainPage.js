@@ -19,6 +19,7 @@ export default class MainPage extends Component {
           top: 0,
         }
         return (
+          <>
           <div className="main">
             <Router>
               <Header />
@@ -37,6 +38,8 @@ export default class MainPage extends Component {
               </Switch>
             </Router>
         </div>
+        
+        </>
         )
     }
 }

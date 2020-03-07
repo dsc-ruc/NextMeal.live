@@ -9,11 +9,19 @@
     them to have some kind of meal at the end of the day.
 
 ## Insparation
+    We had recently learned that almost 50% of college students are food insecure while our dining hall has
+    just gone all you can eat creating an imense amount of food waste. We though that it was crazy that
+    there was so much food waste when there was hungry people who can use it. We tried to turn one man's
+    problem into another man's solution and use foodwaste to end food insecurity.
 
 ## Getting started
-### If you would like to help on this project
-    First clone repo with 'git clone https://github.com/dsc-ruc/NextMeal.live.git'
+### Prerequisites
+    Make sure you have npm installed (for more info go to https://www.npmjs.com/get-npm)
 
-    Next inside of the project directory run `npm install` to get all of the requried packages
+## Installing
+    First clone repo with 
+    ```git clone https://github.com/dsc-ruc/NextMeal.live.git```
+    
+    Next inside of the project directory run ```npm install``` to get all of the requried packages
 
 

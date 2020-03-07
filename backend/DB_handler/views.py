@@ -9,7 +9,7 @@ from rest_framework import generics, views
 from rest_framework.response import Response
 
 config = {
-'apiKey': "AIzaSyCZFfQF3gL3bCnjNnTAabPeMrV8ShJhVEk",
+'apiKey': "",
 'authDomain': "nextmeal-269801.firebaseapp.com",
 'databaseURL': "https://nextmeal-269801.firebaseio.com",
 'projectId': "nextmeal-269801",

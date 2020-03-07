@@ -125,15 +125,15 @@ export class GoogleMap extends Component {
               eTime = {item.food_available_end_time}
               foodAvail = {item.food_available}
               allergies = {item.potential_allergies}
-              position={{lat: item.location.coordinates[0], lng: item.location.coordinates[1]}}
-              qPos = {item.location.coordinates[0] + "," + item.location.coordinates[1]}
+              position={{lat: item.location_y, lng: item.location_x}}
+              qPos = {item.location_y + "," + item.location_x}
               />
       )
     })
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/donors')
+    axios.get('http://localhost:8000/api/donor/?format=json')
       .then(res => {
         this.setState({ allLocations: res.data });
       }).then(() => {

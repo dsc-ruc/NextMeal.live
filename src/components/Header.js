@@ -26,6 +26,9 @@ class Header extends Component {
       <li className="nav-item">
         <NavLink exact to="/about" className="nav-item nav-link">Donate Food</NavLink>
       </li>
+      <li className="nav-item">
+        <NavLink exact to="/listView" className="nav-item nav-link">List View</NavLink>
+      </li>
     </ul>
   </div>
       </nav>

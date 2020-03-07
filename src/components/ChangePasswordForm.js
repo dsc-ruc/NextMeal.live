@@ -1,4 +1,4 @@
-mport React from 'react';
+import React from 'react';
 import {Field, Fields, reduxForm} from 'redux-form';
 import {Button} from 'reactstrap';
 import FormField from './FormField';

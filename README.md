@@ -1,5 +1,5 @@
 # Solutions Challenge 2020 Project
-## Rutgers University Camden
+## Rutgers University Camden 
 ## Nextmeal.live
 
 ## What is NextMeal.live

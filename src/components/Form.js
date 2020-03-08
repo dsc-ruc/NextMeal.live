@@ -10,7 +10,7 @@ export default class TaskForm extends Component {
   constructor(props) {
     super(props);
     this.locateMe = this.locateMe.bind(this);
-    this.onChangeName_of_Restaurant = this.onChangeName_of_Restaurant.bind(
+    this.onChangeRestaurant_name = this.onChangeRestaurant_name.bind(
       this
     );
 
@@ -27,7 +27,7 @@ export default class TaskForm extends Component {
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
-      name_of_restaurant: "",
+      restaurant_name: "",
       location: {
         type: "Point",
         coordinates: [0, 0]
@@ -55,9 +55,9 @@ export default class TaskForm extends Component {
     });
   }
 
-  onChangeName_of_Restaurant(e) {
+  onChangeRestaurant_name(e) {
     this.setState({
-      name_of_restaurant: e.target.value
+      restaurant_name: e.target.value
     });
   }
   onChangefood_available_start_time(e) {
@@ -101,7 +101,7 @@ export default class TaskForm extends Component {
     e.preventDefault();
 
     const donor = {
-      name_of_restaurant: this.state.name_of_restaurant,
+      restaurant_name: this.state.restaurant_name,
       location: this.state.location,
       food_available_start_time: this.state.food_available_start_time,
       food_available_end_time: this.state.food_available_end_time,
@@ -113,13 +113,13 @@ export default class TaskForm extends Component {
     console.log(donor);
 
     axios
-      .post("https://35.245.117.252:5000", donor)
+      .post("http://localhost:8000/api/", donor)
       .then(res => {
         this.setState({fireRedirect: true});
       });
 
 
-    //window.location = "/";
+    window.location = "/";
   }
   
 
@@ -138,8 +138,8 @@ export default class TaskForm extends Component {
               id="standard-basic"
               label="Restaurant Name"
               variant="standard"
-              value={this.state.name_of_restaurant}
-              onChange={this.onChangeName_of_Restaurant}
+              value={this.state.restaurant_name}
+              onChange={this.onChangeRestaurant_name}
             />
           </Form.Group>
           <div className="">
@@ -186,7 +186,7 @@ export default class TaskForm extends Component {
               label="Address"
               variant="standard"
               value={this.state.address}
-              onChange={this.onChangeName_of_Restaurant}
+              onChange={this.onChangeRestaurant_name}
             />
             <a cursor="pointer" onClick={this.locateMe}> Locate Me</a>
           </Form.Group>

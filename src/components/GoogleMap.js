@@ -119,14 +119,14 @@ export class GoogleMap extends Component {
                 scaledSize: new this.props.google.maps.Size(64,64)
               }}
               onClick={this.onMarkerClick}
-              name={item.name_of_restaurant}
+              name={item.restaurant_name}
               address = {item.address}
               sTime = {item.food_available_start_time}
               eTime = {item.food_available_end_time}
               foodAvail = {item.food_available}
               allergies = {item.potential_allergies}
-              position={{lat: item.location_y, lng: item.location_x}}
-              qPos = {item.location_y + "," + item.location_x}
+              position={{lat: item.location[0], lng: item.location[1]}}
+              qPos = {item.location[0] + "," + item.location[1]}
               />
       )
     })
@@ -145,12 +145,14 @@ export class GoogleMap extends Component {
 
       getCoordinates().then(position => {
         if (isNaN(position.coords.latitude) || isNaN(position.coords.longitude)) {
+          console.log("lat lon not found");
           this.setState({ currlat: parseFloat("39.952744") });
           this.setState({ currlon: parseFloat("-75.163500") });
         } else {
+          console.log("lat lon found");
           this.setState({ currlat: position.coords.latitude });
           this.setState({ currlon: position.coords.longitude });
-        }
+        } 
       });
 
   }
@@ -172,7 +174,8 @@ export class GoogleMap extends Component {
         >
             <Marker
             onClick={this.onMarkerClick}
-            name={'Current location'} >
+            name={'Current location'} 
+            position={{lat: this.state.currlat, lng: this.state.currlon}}>
               <InfoWindow
                 marker={this.state.activeMarker}
                 onClose={this.onInfoWindowClose}

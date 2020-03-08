@@ -24,7 +24,7 @@ class ListView extends Component {
 
                     <Card style={{ width: '100vw', textAlign: 'center' }}>
                         <Card.Body>
-                            <Card.Title>{item.name_of_restaurant}</Card.Title>
+                            <Card.Title>{item.restaurant_name}</Card.Title>
                             <Card.Text>
                             Address: {item.address}
                             </Card.Text>

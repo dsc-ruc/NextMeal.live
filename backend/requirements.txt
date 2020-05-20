@@ -8,7 +8,7 @@ django-cors-headers==3.2.1
 djangorestframework==3.11.0
 gcloud==0.18.3
 googleapis-common-protos==1.51.0
-httplib2==0.17.1
+httplib2==0.18.0
 idna==2.9
 jwcrypto==0.7
 jws==0.1.3

@@ -1,0 +1,27 @@
+# Based on https://github.com/marketplace/actions/google-cloud-platform-gcp-cli-gcloud
+# I have **not** tested this so make sure it works before merging.
+# The template workflow file needs to be modified for the specific needs of this project and so does the repo.
+# Two of the required changes are as follows:
+#           1. Add GCLOUD_PROJECT_ID and GOOGLE_APPLICATION_CREDENTIALS secret to github. See: https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#creating-encrypted-secrets
+#   <Done>  2. Adding a app.yml file. See examples at: https://github.com/GoogleCloudPlatform/nodejs-docs-samples/tree/master/appengine/hello-world
+
+
+name: gcloud-deploy
+# Run only when master gets a push
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions-hub/gcloud@master
+        env:
+          PROJECT_ID: ${{secrets.GCLOUD_PROJECT_ID}}
+          APPLICATION_CREDENTIALS: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}}
+        with:
+          args: app deploy app.yaml
